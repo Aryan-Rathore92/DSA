@@ -2,14 +2,23 @@
 using namespace std;
   
 int main() {
-    int num;
-    cout<< "Enter the value of number : ";
-    cin>>num;
-    if(num%2 == 0){
-        cout<< num << ": is an even number";
+    int a,b,c;
+    cout<< "Enter the value of a : ";
+    cin>>a;
+    cout<< "Enter the value of b : ";
+    cin>>b;
+    cout<< "Enter the value of c : ";
+    cin>>c;
+    
+    if( a>b && a>c){
+        cout<< a << " is greatest number";
+    }
+    else if(b>c){
+        cout<< b << " is greatest number";
     }
     else{
-        cout<< num << ": is an odd number";
+        cout<< c << " is greatest number";
     }
+    
     return 0;
 }
