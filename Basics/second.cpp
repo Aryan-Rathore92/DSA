@@ -2,22 +2,18 @@
 using namespace std;
   
 int main() {
-    int a,b,c;
-    cout<< "Enter the value of a : ";
-    cin>>a;
-    cout<< "Enter the value of b : ";
-    cin>>b;
-    cout<< "Enter the value of c : ";
-    cin>>c;
-    
-    if( a>b && a>c){
-        cout<< a << " is greatest number";
-    }
-    else if(b>c){
-        cout<< b << " is greatest number";
+    int age;
+    int result;
+    cout<< "Enter the age : ";
+    cin>>age;
+
+    result = (age >= 18) ? 1 : 0; 
+
+    if(result == 1){
+        cout<< "you are adult";
     }
     else{
-        cout<< c << " is greatest number";
+        cout<< "You are not adult";
     }
     
     return 0;
