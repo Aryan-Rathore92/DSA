@@ -3,10 +3,13 @@
 using namespace std;
 
  int main() {
-    float a = 3.1234567890;
-    double b = 2.1234567890;
-    cout<< setprecision(12)<< "Value of a is = "<< a << "\n" ;
-    cout<< setprecision(12)<< "Value of b is ="<< b;
-
+    int math, eng, science;
+    cout<< "Enter your math marks : ";
+    cin>>math;
+    cout<< "Enter your eng marks : ";
+    cin>>eng;
+    cout<< "Enter your science marks : ";
+    cin>>science;
+    cout<< "The average marks of the user is : "<< (math+eng+science)/3;
     return 0;
  }
