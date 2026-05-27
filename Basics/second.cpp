@@ -1,7 +1,9 @@
 #include<iostream>
 using namespace std;
  int main() {
-    char a = 'A';
-    cout<< (23.5 + 2 + a);
+    int a = 10;
+    int b = a++;
+    int c = ++a;
+    cout<< b << "\n" << c;
     return 0;
  }
