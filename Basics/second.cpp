@@ -13,8 +13,7 @@ int main() {
         cout<< "you are adult";
     }
     else{
-        cout<< "You are not adult";
+        cout<< "You are not adult !";
     }
-    
     return 0;
 }
