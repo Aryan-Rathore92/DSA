@@ -2,10 +2,12 @@
 using namespace std;
 
 int main(){
-    int count = 1;
-    while(count < 3){
-      cout << count << endl;
-      count++;
+    
+    for(int i=1; i<=4; i++){
+      for(int j=1; j<=4; j++){
+        cout << "*";
+      }
+      cout << '\n';
     }
     return 0;
 }
