@@ -3,11 +3,11 @@ using namespace std;
 
 int main(){
     
-    for(int i=1; i<=4; i++){
-      for(int j=1; j<=4; j++){
-        cout << "*";
-      }
-      cout << '\n';
+    int n;
+    cout<< "Enter the value of n is : ";
+    cin>>n;
+    for(int i=n; 1 <= i; i--){
+        cout << i << endl;
     }
     return 0;
 }
