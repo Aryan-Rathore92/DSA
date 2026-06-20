@@ -1,13 +1,20 @@
 #include<iostream>
 using namespace std;
 
+
 int main() {
-    for(int i=1; i<=10; i++){
-        if(i==7){
-            continue;
+    int num;
+    cout << "Enter the number : ";
+    cin >> num;
+    do{
+        if(num%2 == 0){
+            cout << "Number " << num << " is an co-prime number.";
+            break;
+        } else{
+            cout << "Number " << num << " is an prime number.";
+            break;
         }
-        cout << i <<endl;
-    }
+    } while (true);
     
     return 0;
 }
