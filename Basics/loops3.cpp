@@ -1,20 +1,25 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 
 int main() {
-    int num;
-    cout << "Enter the number : ";
-    cin >> num;
-    do{
-        if(num%2 == 0){
-            cout << "Number " << num << " is an co-prime number.";
-            break;
-        } else{
-            cout << "Number " << num << " is an prime number.";
+    
+    int n;
+    cout << "Enter a number : ";
+    cin >> n;
+    bool isPrime = true;
+
+    for(int i=2; i<=sqrt(n); i++){
+        if( n%2 ==0){
+            isPrime = false;
             break;
         }
-    } while (true);
-    
+    }
+    if(isPrime){
+        cout << "prime";
+    } else{
+        cout << "co-prime";
+    }
     return 0;
 }
