@@ -6,8 +6,7 @@ int main() {
     char ch = 'A';
     for(int i=1; i<=n; i++){
         for(int j=1; i>=j; j++){
-            cout << ch;
-            ch++;
+            cout << ch++; // post increament using here
         }
         cout << endl;
     }
