@@ -15,12 +15,27 @@ using namespace std;
 
 // method-02
 
-bool checkPrime(int n){
+// bool checkPrime(int n){
+//     if(n==1){
+//         return false;
+//     }
+
+//     for(int i=2; i<=(n-1); i++){
+//         if(n%i==0){ // co-prime
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+
+// method-03
+
+bool isPrime(int n){
     if(n==1){
         return false;
     }
 
-    for(int i=2; i<=(n-1); i++){
+    for(int i=2; i*i<=n; i++){
         if(n%i==0){ // co-prime
             return false;
         }
@@ -32,6 +47,6 @@ int main(){
     int a;
     cout << "Enter the number : ";
     cin >> a;
-    cout << checkPrime(a);
+    cout << isPrime(a);
     return 0;
 }
