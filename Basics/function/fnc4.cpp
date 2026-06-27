@@ -1,24 +1,20 @@
 #include<iostream>
 using namespace std;
 
-int factorial(int n){ // calculate factorial
-   int fact =1;
-   for(int i=1; i<=n; i++){
-    fact *= i;
-   }
-   return fact;
+char isPrime(int num){
+    if(num%2 == 0){
+        cout << "Number " << num << " is an co-prime no.";
+    } else if(num == 1){
+       cout << "Number " << num << " is an co-prime no.";
+    }
+    else{
+        cout << "Number " << num << " is an prime no.";
+    }
 }
-
-int binCoff(int n, int r){ // calculate binomial cofficent
-    int val1 = factorial(n);
-    int val2 = factorial(r);
-    int val3 = factorial(n-r);
-    int result = val1 / (val2*val3);
-    return result;
-}
-
 int main(){
-    int res = binCoff(4,2);
-    cout << res;
+    int a;
+    cout << "Enter the number : ";
+    cin >> a;
+    isPrime(a);
     return 0;
 }
