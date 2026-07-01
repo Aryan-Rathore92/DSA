@@ -3,10 +3,11 @@ using namespace std;
 
 int main(){
     int  a = 10;
+    double pi = 3.14;
     int *ptr = &a;
-    int **ptr2 = &ptr; 
-    int ***ptr3 = &ptr2;
+    double *ptr2 = &pi; 
     cout << ptr2 << " = " << ptr << endl;
-    cout << ptr3 << " = " << ptr2 << endl;
+    cout << &pi << " = " << ptr2 << endl;
+    cout << sizeof(ptr2);
     return 0;
 }
