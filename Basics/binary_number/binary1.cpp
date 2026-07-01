@@ -16,6 +16,6 @@ int main() {
      int res = square(31);
     cout << res << endl;
     cout << sizeof(int) << endl;
-    cout << sizeof(unsigned int) << endl;
+    cout << sizeof(long long int) << endl;
     return 0;
 }
