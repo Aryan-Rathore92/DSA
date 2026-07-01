@@ -1,13 +1,12 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    int  a = 10;
+int main() {
+    int a = 10;
     int *ptr = &a;
-    int result = *(ptr); // derefrence operator
+    int result = *(ptr);
     cout << result << endl;
+
     *(ptr) = 20;
-    cout << a;
-    
-    return 0;
+    cout << a << endl;
 }
