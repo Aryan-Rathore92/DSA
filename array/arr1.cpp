@@ -2,6 +2,7 @@
 using namespace std;
 
 int main(){
-    cout << "Hello Array!";
+    int marks[5] = {10, 20, 30, 40, 50};
+    cout << marks << endl;
     return 0;
 }
