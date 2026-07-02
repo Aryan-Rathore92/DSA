@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int marks[5] = {10, 20, 30, 40, 50};
-    cout << marks << endl;
+    int mark[5] = {10, 20, 30, 40, 50};
+    cout << mark << endl;
     return 0;
 }
