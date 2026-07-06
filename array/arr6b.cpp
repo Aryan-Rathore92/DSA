@@ -15,6 +15,8 @@ int main() {
     int start = 0, end = n-1;
 
     while(start < end){
+      // swap(arr[start], arr[end]);
+
         int temp = arr[end];
         arr[end] = arr[start];
         arr[start] = temp;
