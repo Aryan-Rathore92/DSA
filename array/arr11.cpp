@@ -3,7 +3,8 @@ using namespace std;
 
 int printArr(int *ptr, int n){
     for(int i=0; i<n; i++){
-        cout << (*ptr + i) << ", "; // 1, 2, 3, 4, 5, 
+        cout << (*ptr + i) << ", "; // 1, 2, 3, 4, 5,
+        // ptr = ptr + 1; 
     }
 }
 
